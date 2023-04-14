@@ -1,1 +1,1 @@
-# cfg-react-project
+# CFG-react-project
