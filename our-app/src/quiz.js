@@ -27,5 +27,28 @@
     <h3 className="questionNumber">Question 4</h3>
     <p className="questionPhrase">Choose your preferred sugar level?</p>
     <img src="Images\Q4\sugarLevel.png" alt="sugar meter"/>
+
+    <h3 className="questionNumber">Question 5</h3>
+    <p className="questionPhrase">Which colours do you like? <italics>Tick all that apply:</italics></p>
+    <img src="Images\Q5\colours.png" alt="Blue Lime Crimson Rose Aqua"/>
+
+    <h3 className="questionNumber">Question 6</h3>
+    <p className="questionPhrase">Which of these rooms fit best in your home?</p>
+    <img src="Images\Q6\Q6image1.png" alt="home with clutter"/>
+    <img src="Images\Q6\Q6image2.png" alt="home with whites and space"/>
+    <img src="Images\Q6\Q6image3.png" alt="home with fireplace and candles"/>
+    <img src="Images\Q6\Q6image4.png" alt="home with pets"/>
+    <img src="Images\Q6\Q6image5.png" alt="home with kids' toys"/>
+
+    <h3 className="questionNumber">Question 7</h3>
+    <p className="questionPhrase">Which would be your prefered holiday? <italics>Tick all that apply:</italics></p>
+    <img src="Images\Q7\Q7image1.png" alt="ski holiday"/>
+    <img src="Images\Q7\Q7image2.png" alt="beach holiday"/>
+    <img src="Images\Q7\Q7image3.png" alt="city break"/>
+    <img src="Images\Q7\Q7image4.png" alt="camping holiday"/>
+    <img src="Images\Q7\Q7image5.png" alt="spa break"/>
+
+
+
     </>
 
