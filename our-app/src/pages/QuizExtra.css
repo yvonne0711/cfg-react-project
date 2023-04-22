@@ -7,28 +7,10 @@
   height:50px;
 }
 
-.quizImageMilkTea {
-  width:170px;
-  padding:20px;
-}
 
-.quizImageFruitTea {
-  width:200px;
-  padding:20px;
-}
-
-.quizImageSugarTea {
-  width:250px;
-  padding:20px;
-}
-
-.quizImageVegetableTea {
-  width:160px;
-  padding:20px;
-}
-
-.quizImageCamomileTea {
-  width:300px;
+.quizImageTea {
+  width:230px;
+  height:230px;
   padding:20px;
 }
 
@@ -39,14 +21,28 @@
 
 .quizImageSugar {
   width:600px;
+  text-align:centre;
 }
 
-.quizImageColours {
-  width: 700px;
+.quizColours {
+  width:260px;
+  height:200px;
+  padding:10px;
 }
   
 .quizImageHome {
-  width:300px;
+  width:260px;
+  padding:10px;
+}
+
+.quizImageDog {
+  width:263px;
+  padding:10px;
+}
+
+.quizImageToys {
+  width:255px;
+  padding:10px;
 }
 
 .quizImageHoliday {

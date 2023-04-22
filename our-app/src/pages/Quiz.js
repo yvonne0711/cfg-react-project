@@ -14,8 +14,11 @@ import Q3image6 from './Q3image6.jpg'
 
 import sugarLevel from './sugarLevel.png' 
 
-import colours from './colours.jpg' 
-
+import coloursBlue from './coloursBlue.jpg' 
+import coloursGreen from './coloursGreen.jpg' 
+import coloursCrimson from './coloursCrimson.jpg' 
+import coloursPink from './coloursPink.jpg' 
+import coloursAqua from './coloursAqua.jpg' 
 
 import Q6image1 from './Q6image1.png' 
 import Q6image2 from './Q6image2.png' 
@@ -51,11 +54,11 @@ const Quiz = () => {
 
     <h3 className="questionNumber">Question 2</h3>
     <p className="questionPhrase">Which of these pictures inspires your tastebuds? <span italics>Click all that apply</span></p>
-    <img className="quizImageMilkTea" src={Q2image1} alt="milk tea"/>
-    <img className="quizImageFruitTea" src={Q2image2} alt="fruit tea"/>
-    <img className="quizImageSugarTea" src={Q2image3} alt="brown sugar tea"/>
-    <img className="quizImageVegetableTea" src={Q2image4}  alt="vegetable tea"/>
-    <img className="quizImageCamomileTea" src={Q2image5} alt="camomile tea"/>
+    <img className="quizImageTea" src={Q2image1} alt="milk tea"/>
+    <img className="quizImageTea" src={Q2image2} alt="fruit tea"/>
+    <img className="quizImageTea" src={Q2image3} alt="brown sugar tea"/>
+    <img className="quizImageTea" src={Q2image4}  alt="vegetable tea"/>
+    <img className="quizImageTea" src={Q2image5} alt="camomile tea"/>
 
     <h3 className="questionNumber">Question 3</h3>
     <p className="questionPhrase">Which of these chocolates would you prefer to receive?</p>
@@ -72,15 +75,19 @@ const Quiz = () => {
 
     <h3 className="questionNumber">Question 5</h3>
     <p className="questionPhrase">Which colours do you like? <italics>Tick all that apply:</italics></p>
-    <img className="quizImageColours" src={colours} alt="Blue Lime Crimson Rose Aqua"/>
+    <img className="quizColours" src={coloursBlue} alt="Blue"/>
+    <img className="quizColours" src={coloursGreen} alt="Lime"/>
+    <img className="quizColours" src={coloursCrimson} alt="Crimson"/>
+    <img className="quizColours" src={coloursPink} alt="Rose"/>
+    <img className="quizColours" src={coloursAqua} alt="Aqua"/>
 
     <h3 className="questionNumber">Question 6</h3>
     <p className="questionPhrase">Which of these rooms fit best in your home?</p>
     <img className="quizImageHome" src={Q6image1} alt="home with clutter"/>
     <img className="quizImageHome" src={Q6image2} alt="home with whites and space"/>
     <img className="quizImageHome" src={Q6image3} alt="home with fireplace and candles"/>
-    <img className="quizImageHome" src={Q6image4}  alt="home with pets"/>
-    <img className="quizImageHome" src={Q6image5}  alt="home with kids' toys"/>
+    <img className="quizImageDog" src={Q6image4}  alt="home with pets"/>
+    <img className="quizImageToys" src={Q6image5}  alt="home with kids' toys"/>
 
     <h3 className="questionNumber">Question 7</h3>
     <p className="questionPhrase">Which would be your prefered holiday? <italics>Tick all that apply:</italics></p>
