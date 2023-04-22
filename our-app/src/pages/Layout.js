@@ -1,5 +1,5 @@
 import { Outlet, Link } from "react-router-dom";
-import './extra.css';
+import './QuizExtra.css';
 import logo_pic from './logo_pic.png';
 {/*import bubblefy_logo_pic from "bubblefy_logo_pic.png";*/}
 

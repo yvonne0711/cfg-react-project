@@ -1,0 +1,33 @@
+.title {
+    color:blue;
+  }
+
+.logo {
+  width:100px;
+  height:50px;
+}
+
+.quizImageDrink {
+  width:150px;
+}
+
+.quizImageChocs {
+  width:210px;
+  padding:10px;
+}
+
+.quizImageSugar {
+  width:600px;
+}
+
+.quizImageColours {
+  width: 700px;
+}
+  
+.quizImageHome {
+  width:300px;
+}
+
+.quizImageHoliday {
+  width:300px;
+}
