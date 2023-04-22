@@ -50,7 +50,9 @@ const Quiz = () => {
     <p className="answer">I'm watching my weight</p>
 
     <h3 className="questionNumber">Question 2</h3>
-    <p className="questionPhrase">Which of these pictures inspires your tastebuds? <span italics>Click all that apply</span></p>
+    <p className="questionPhrase">Which of these pictures inspires your tastebuds? <span style= {{fontStyle: 'italic'}}>Click all that apply</span></p>
+    {//<span italics>Click all that apply</span></p>
+    }
     <img className="quizImageMilkTea" src={Q2image1} alt="milk tea"/>
     <img className="quizImageFruitTea" src={Q2image2} alt="fruit tea"/>
     <img className="quizImageSugarTea" src={Q2image3} alt="brown sugar tea"/>
@@ -69,6 +71,11 @@ const Quiz = () => {
     <h3 className="questionNumber">Question 4</h3>
     <p className="questionPhrase">Choose your preferred sugar level?</p>
     <img className="quizImageSugar" src={sugarLevel} alt="sugar level"/>
+    <p className="answer">Very low</p>
+    <p className="answer">Low</p>
+    <p className="answer">Moderate</p>
+    <p className="answer">High</p>
+    <p className="answer">Very high</p>
 
     <h3 className="questionNumber">Question 5</h3>
     <p className="questionPhrase">Which colours do you like? <italics>Tick all that apply:</italics></p>
