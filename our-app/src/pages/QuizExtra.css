@@ -7,8 +7,29 @@
   height:50px;
 }
 
-.quizImageDrink {
-  width:150px;
+.quizImageMilkTea {
+  width:170px;
+  padding:20px;
+}
+
+.quizImageFruitTea {
+  width:200px;
+  padding:20px;
+}
+
+.quizImageSugarTea {
+  width:250px;
+  padding:20px;
+}
+
+.quizImageVegetableTea {
+  width:160px;
+  padding:20px;
+}
+
+.quizImageCamomileTea {
+  width:300px;
+  padding:20px;
 }
 
 .quizImageChocs {

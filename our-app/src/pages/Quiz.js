@@ -51,11 +51,11 @@ const Quiz = () => {
 
     <h3 className="questionNumber">Question 2</h3>
     <p className="questionPhrase">Which of these pictures inspires your tastebuds? <span italics>Click all that apply</span></p>
-    <img className="quizImageDrink" src={Q2image1} alt="milk tea"/>
-    <img className="quizImageDrink" src={Q2image2} alt="fruit tea"/>
-    <img className="quizImageDrink" src={Q2image3} alt="brown sugar tea"/>
-    <img className="quizImageDrink" src={Q2image4}  alt="vegetable tea"/>
-    <img className="quizImageDrink" src={Q2image5} alt="camomile tea"/>
+    <img className="quizImageMilkTea" src={Q2image1} alt="milk tea"/>
+    <img className="quizImageFruitTea" src={Q2image2} alt="fruit tea"/>
+    <img className="quizImageSugarTea" src={Q2image3} alt="brown sugar tea"/>
+    <img className="quizImageVegetableTea" src={Q2image4}  alt="vegetable tea"/>
+    <img className="quizImageCamomileTea" src={Q2image5} alt="camomile tea"/>
 
     <h3 className="questionNumber">Question 3</h3>
     <p className="questionPhrase">Which of these chocolates would you prefer to receive?</p>
