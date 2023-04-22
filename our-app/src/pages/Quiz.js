@@ -1,5 +1,12 @@
 import './extra.css';
+import Q2image1 from './Q2image1.png' 
+import Q2image2 from './Q2image2.png' 
+import Q2image3 from './Q2image3.png' 
+import Q2image4 from './Q2image4.png' 
+import Q2image5 from './Q2image5.png' 
 import Results from './Results.js';
+
+
 
 const Quiz = () => {
     return <><h1>Quiz</h1>;
@@ -11,11 +18,11 @@ const Quiz = () => {
 
     <h3 className="questionNumber">Question 2</h3>
     <p className="questionPhrase">Which of these pictures inspires your tastebuds? <span italics>Click all that apply</span></p>
-    <img src="Images\Q2\Q2image1.png" alt="milk tea"/>
-    <img src="Images\Q2\Q2image2.png" alt="fruit tea"/>
-    <img src="Images\Q2\Q2image3.png" alt="brown sugar tea"/>
-    <img src="Images\Q2\Q2image4.png" alt="vegetable tea"/>
-    <img src="Images\Q2\Q2image5.png" alt="camomile tea"/>
+    <img className="quizImage" src={Q2image1} alt="milk tea"/>
+    <img className="quizImage" src={Q2image2} alt="fruit tea"/>
+    <img className="quizImage" src={Q2image3} alt="brown sugar tea"/>
+    <img className="quizImage" src={Q2image4}  alt="vegetable tea"/>
+    <img className="quizImage" src={Q2image5} alt="camomile tea"/>
 
     <h3 className="questionNumber">Question 3</h3>
     <p className="questionPhrase">Which of these chocolates would you prefer to receive?</p>

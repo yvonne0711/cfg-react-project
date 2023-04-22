@@ -1,16 +1,19 @@
 import { Outlet, Link } from "react-router-dom";
 import './extra.css';
+import logo_pic from './logo_pic.png';
 {/*import bubblefy_logo_pic from "bubblefy_logo_pic.png";*/}
 
 
+function Header() {
+  // Import result is the URL of your image
+  return <img src={logo_pic} alt="Bubblefy Logo" />;
+}
 
 const Layout = () => {
   return (
     <>
       <nav>
-        {/*<div>
-          <img className="logo" src={bubblefy_logo_pic}/>
-  </div> */}
+
         <ul>
           <li>
             <Link to="/home">Home</Link>  {/* nav bar link to welcome page*/}
