@@ -4,7 +4,7 @@ import '../App.css';
 import image from "../Images/funtea/characters_png.png";
 
 
-const Heading = () => {
+const Results = () => {
   return (
     <div style={{ textAlign: 'center' }}>
     <h1 style={{ fontSize: '3em', marginBottom: '0.5em' }}>Wow, great choice... You got</h1>
@@ -30,17 +30,6 @@ const Heading = () => {
 }
 
 
-const Results = () => {
-    return (
-    <div>
-    {/* <Navbar /> */}
-    <Heading />
-    {/* <h1>Results</h1> */}
-    {/* Other stuff?? */}
-  </div>
-);
-    
-    
-}
+
 
 export default Results;
