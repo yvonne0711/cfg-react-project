@@ -9,6 +9,17 @@
   font-family: "Nunito", "Roboto",
     sans-serif;
 }
+
+.gradient-bg-results {
+  background-image: linear-gradient(to bottom, #e4dee7, #eadde9, #e4e6f2, #e2e9f4, #edebe9);
+  position: absolute;
+  height: 80vh; /* set the height to 50% of the viewport height */
+  top: 20vh; /* set the top position to 50% of the viewport height */
+  left: 0;
+  right: 0;
+  z-index: -500;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

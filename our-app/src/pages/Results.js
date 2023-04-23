@@ -23,6 +23,7 @@ const Results = () => {
         <div style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
           <img src={character} alt="Milk tea" style={{ width: '100%', maxWidth: '400px' }} />
         </div>
+        <div className="gradient-bg-results"></div>
       </div>
     </div>
 
