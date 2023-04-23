@@ -40,6 +40,9 @@ const Quiz = () => {
     return <><h1>Quiz</h1>
     <h3 className="questionNumber">Question 1</h3>
     <p className="questionPhrase">Do any of the following apply to you?</p>
+
+    {/* working checkbox, not finished */}
+    <div><input type="checkbox"/>here</div>
 {/* attempting to create checkboxes for the allergy / intolerance / diabetes / weight
     <form action="/action_page.php">
     <input type="checkbox" id="issue1" name="issue1" value="allergy"><label for="issue1">I have a food allergy or an intolerance</label><br></br>

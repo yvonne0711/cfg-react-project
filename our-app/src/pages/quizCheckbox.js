@@ -1,0 +1,13 @@
+{/*may be deleted, inserted by Verity, attempting different things*/}
+
+const Checkbox = ({ label }) => {
+    return (
+      <div className="checkbox-wrapper">
+        <label>
+          <input type="checkbox" />
+          <span>{label}</span>
+        </label>
+      </div>
+    );
+  };
+  export default Checkbox;
