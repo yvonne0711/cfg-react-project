@@ -72,6 +72,11 @@ const Quiz = () => {
     <h3 className="questionNumber">Question 4</h3>
     <p className="questionPhrase">Choose your preferred sugar level?</p>
     <img className="quizImageSugar" src={sugarLevel} alt="sugar level"/>
+    <p className="answer">Very low</p>
+    <p className="answer">Low</p>
+    <p className="answer">Moderate</p>
+    <p className="answer">High</p>
+    <p className="answer">Very high</p>
 
     <h3 className="questionNumber">Question 5</h3>
     <p className="questionPhrase">Which colours do you like? <italics>Tick all that apply:</italics></p>
