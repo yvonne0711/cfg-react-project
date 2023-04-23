@@ -17,33 +17,15 @@ body {
   padding-bottom: 1rem;
 }
 
-.quizImageMilkTea {
-  width:170px;
-  padding:20px;
-}
-
-.quizImageFruitTea {
-  width:200px;
-  padding:20px;
-}
-
-.quizImageSugarTea {
-  width:250px;
-  padding:20px;
-}
-
-.quizImageVegetableTea {
-  width:160px;
-  padding:20px;
-}
-
-.quizImageCamomileTea {
+.quizImageTea {
   width:300px;
+  height:350px;
   padding:20px;
 }
 
 .quizImageChocs {
-  width:210px;
+  width:260px;
+  height:350px;
   padding:10px;
 }
 
@@ -51,16 +33,34 @@ body {
   width:600px;
 }
 
-.quizImageColours {
-  width: 700px;
+.quizColours {
+  width:300px;
+  height:300px;
+  padding:20px;
 }
   
 .quizImageHome {
   width:300px;
+  height:200px;
+  padding:20px;
+}
+
+.quizImageDog {
+  width:300px;
+  height:200px;
+  padding:20px;
+}
+
+.quizImageToys {
+  width:300px;
+  height:200px;
+  padding:20px;
 }
 
 .quizImageHoliday {
   width:300px;
+  height:200px;
+  padding:20px;
 }
 
 /* Navbar CSS */

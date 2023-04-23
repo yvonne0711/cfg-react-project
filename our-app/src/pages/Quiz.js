@@ -33,11 +33,14 @@ import Q7image4 from './Q7image4.png'
 import Q7image5 from './Q7image5.png' 
 
 import Results from './Results.js';
+import React from 'react';
+import { useNavigate } from "react-router-dom";
 
+const Quiz = (props) => {
+    const navigate = useNavigate();
 
-
-const Quiz = () => {
-    return <><h1>Quiz</h1>
+    return <>
+    <h1>Quiz</h1>
     <h3 className="questionNumber">Question 1</h3>
     <p className="questionPhrase">Do any of the following apply to you?</p>
 
@@ -104,7 +107,9 @@ const Quiz = () => {
     <img className="quizImageHoliday" src={Q7image3} alt="city break"/>
     <img className="quizImageHoliday" src={Q7image4} alt="camping holiday"/>
     <img className="quizImageHoliday" src={Q7image5} alt="spa break"/>
-
+    <p>
+    <button className="resultsButton" onClick={() => navigate("/Results")}>View my result!</button>
+    </p>
     </>
 
 
