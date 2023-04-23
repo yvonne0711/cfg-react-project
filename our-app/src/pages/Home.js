@@ -1,7 +1,12 @@
 import "./QuizExtra.css";
 import character from "../Images/funtea/character.png";
+import React from 'react';
+import { useNavigate } from "react-router-dom";
 
-const Home = () => {
+
+const Home = (props) => {
+  const navigate = useNavigate();
+
   return (
     <>
       <div className="main-section">
@@ -19,7 +24,7 @@ const Home = () => {
               </p>
             </div>
             <div>
-              <button className="cta-button">Start Quiz</button>
+              <button className="cta-button" onClick={() => navigate("/Quiz")}>Start Quiz</button>
             </div>
           </div>
           <div>

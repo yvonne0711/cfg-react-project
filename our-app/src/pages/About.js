@@ -1,8 +1,5 @@
 import './QuizExtra.css';
 import React from 'react';
-
-
-/* attempt to get the button working but it just brings you to the home page and the address bar has the path name below */
 import { useNavigate } from "react-router-dom";
 
 const About = (props) => {
