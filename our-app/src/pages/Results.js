@@ -1,4 +1,5 @@
 import './QuizExtra.css';
+import '../App.css';
 
 const Results = () => {
     return <h1>Results</h1>;
