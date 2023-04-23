@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Quiz from "./pages/Quiz";
 import NoPage from "./pages/NoPage";
 import Results from "./pages/Results";
+import ResultsFT from "./pages/ResultsFT";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
           <Route path="Quiz" element={<Quiz />} />
           <Route path="*" element={<Home />} />
           <Route path="Results" element={<Results />} />
+          <Route path="ResultsFT" element={<ResultsFT />} />
         </Route>
       </Routes>
     </BrowserRouter>
