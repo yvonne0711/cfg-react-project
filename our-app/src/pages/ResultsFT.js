@@ -4,7 +4,7 @@ import '../App.css';
 import character from "../Images/funtea/character.png";
 
 
-const Results = () => {
+const ResultsFT = () => {
   return (
     <div style={{ textAlign: 'center' }}>
     <h1 style={{ fontSize: '3em', marginBottom: '0.5em' }}>Wow, great choice... You got</h1>
@@ -32,4 +32,4 @@ const Results = () => {
 
 
 
-export default Results;
+export default ResultsFT;
