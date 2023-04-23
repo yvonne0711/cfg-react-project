@@ -1,10 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800;&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #181818;
+  margin: 0;
+}
+
+
 .title {
     color:blue;
   }
 
 .logo {
-  width:100px;
   height:50px;
+  padding-left: 0.8rem;
+  padding-bottom: 1rem;
 }
 
 .quizImageMilkTea {
@@ -51,4 +62,59 @@
 
 .quizImageHoliday {
   width:300px;
+}
+
+/* Navbar CSS */
+.navbar {
+  background-color: #f1f1f1;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-logo{
+  color: #181818;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 50px;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-item {
+  margin: 0 20px;
+}
+
+.navbar-link {
+  color: #181818;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+
+.navbar-link:hover,
+.navbar-link.active {
+  color: #853b73;
 }

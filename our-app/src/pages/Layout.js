@@ -1,35 +1,41 @@
-import { Outlet, Link } from "react-router-dom";
-import './QuizExtra.css';
-import logo_pic from './logo_pic.png';
-{/*import bubblefy_logo_pic from "bubblefy_logo_pic.png";*/}
+import { Outlet, NavLink } from "react-router-dom";
+import "./QuizExtra.css";
+import logo_pic from "./logo_pic.png";
 
-
-function Header() {
-  // Import result is the URL of your image
-  return <img src={logo_pic} alt="Bubblefy Logo" />;
-}
 
 const Layout = () => {
   return (
     <>
-      <nav>
-
-        <ul>
-          <li>
-            <Link to="/home">Home</Link>  {/* nav bar link to welcome page*/}
+      <nav className="navbar">
+      <div className="navbar-container">
+     
+        <NavLink exact to="/home" className="navbar-logo">Bubblefy
+        <img src={logo_pic} className="logo" alt="Logo" />
+        </NavLink>
+        
+        <ul className="navbar-menu">
+          <li className="navbar-item">
+            <NavLink exact to="/home" className="navbar-link" activeClassName="active">
+              Home
+            </NavLink>
           </li>
-          <li>
-            <Link to="/about">About</Link>  {/* nav bar link to about page*/}
+          <li className="navbar-item">
+            <NavLink to="/about" className="navbar-link" activeClassName="active">
+              About
+            </NavLink>
           </li>
-          <li>
-            <Link to="/quiz">Quiz</Link>  {/* nav bar link to quiz page*/}
+          <li className="navbar-item">
+            <NavLink to="/quiz" className="navbar-link" activeClassName="active">
+              Quiz
+            </NavLink>
           </li>
         </ul>
-      </nav>
+      </div>
+    </nav>
 
       <Outlet />
     </>
-  )
+  );
 };
 
 export default Layout;
