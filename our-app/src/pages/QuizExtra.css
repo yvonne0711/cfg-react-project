@@ -7,7 +7,6 @@ body {
   margin: 0;
 }
 
-
 .title {
     color:blue;
   }
@@ -18,10 +17,28 @@ body {
   padding-bottom: 1rem;
 }
 
+.quizImageMilkTea {
+  width:170px;
+  padding:20px;
+}
 
-.quizImageTea {
-  width:230px;
-  height:230px;
+.quizImageFruitTea {
+  width:200px;
+  padding:20px;
+}
+
+.quizImageSugarTea {
+  width:250px;
+  padding:20px;
+}
+
+.quizImageVegetableTea {
+  width:160px;
+  padding:20px;
+}
+
+.quizImageCamomileTea {
+  width:300px;
   padding:20px;
 }
 
@@ -32,28 +49,14 @@ body {
 
 .quizImageSugar {
   width:600px;
-  text-align:centre;
 }
 
-.quizColours {
-  width:260px;
-  height:200px;
-  padding:10px;
+.quizImageColours {
+  width: 700px;
 }
   
 .quizImageHome {
-  width:260px;
-  padding:10px;
-}
-
-.quizImageDog {
-  width:263px;
-  padding:10px;
-}
-
-.quizImageToys {
-  width:255px;
-  padding:10px;
+  width:300px;
 }
 
 .quizImageHoliday {
@@ -87,7 +90,6 @@ body {
   align-items: center;
   max-width: 1200px;
   width: 100%;
-  padding: 0 50px;
 }
 
 .navbar-menu {
@@ -113,4 +115,82 @@ body {
 .navbar-link:hover,
 .navbar-link.active {
   color: #853b73;
+}
+
+/* Homepage CSS */
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 13rem;
+}
+
+.main-section {
+  display: flex;
+  height: 75vh;
+  align-items: center;
+}
+
+.main-content {
+  max-width: auto;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.main-header {
+  font-size: 3.4rem;
+  max-width: 80%;
+}
+
+.bubble-tea-sub {
+  color: #a567be;
+}
+
+.main-slogan {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+
+.main-h1 {
+  margin:0;
+  text-transform: uppercase;
+  font-family: "roboto", sans-serif;
+  letter-spacing: -0.2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  font-family: "Nunito";
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.rem;
+  padding: 10px 20px;
+  border-radius: 7px;
+  transition: all 0.3s ease-in-out;
+  background-color: #8b84f6;
+  width: 30%;
+  border: 3px solid #181818;
+}
+
+.cta-button:hover {
+  background-color: #fff;
+  color: #181818;
+  border: 3px solid #8b84f6;
+}
+
+.character-img {
+  width: 80%;
+  margin-right: 5rem;
+}
+
+.gradient-bg {
+  background-image: linear-gradient(to bottom, #e4dee7, #eadde9, #e4e6f2, #e2e9f4, #edebe9);
+  position: absolute;
+  height: 60vh;
+  top: 23vh;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -500;
 }

@@ -1,7 +1,7 @@
 import './QuizExtra.css';
 import '../App.css';
 //import '.../navbar.js';
-import image from "../Images/funtea/characters_png.png";
+import character from "../Images/funtea/character.png";
 
 
 const Results = () => {
@@ -21,7 +21,7 @@ const Results = () => {
           </h2>
         </div>
         <div style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <img src={image} alt="Milk tea" style={{ width: '100%', maxWidth: '400px' }} />
+          <img src={character} alt="Milk tea" style={{ width: '100%', maxWidth: '400px' }} />
         </div>
       </div>
     </div>
