@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Quiz from "./pages/Quiz";
 import NoPage from "./pages/NoPage";
+import Results from "./pages/Results";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
           <Route path="About" element={<About />} />
           <Route path="Quiz" element={<Quiz />} />
           <Route path="*" element={<Home />} />
+          <Route path="Results" element={<Results />} />
         </Route>
       </Routes>
     </BrowserRouter>
