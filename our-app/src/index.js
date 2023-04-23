@@ -7,6 +7,9 @@ import Quiz from "./pages/Quiz";
 import NoPage from "./pages/NoPage";
 import Results from "./pages/Results";
 import ResultsFT from "./pages/ResultsFT";
+import ResultsBST from "./pages/ResultsBST";
+import ResultsVT from "./pages/ResultsVT";
+import ResultsCT from "./pages/ResultsCT";
 
 export default function App() {
   return (
@@ -19,6 +22,9 @@ export default function App() {
           <Route path="*" element={<Home />} />
           <Route path="Results" element={<Results />} />
           <Route path="ResultsFT" element={<ResultsFT />} />
+          <Route path="ResultsBST" element={<ResultsBST />} />
+          <Route path="ResultsVT" element={<ResultsVT />} />
+          <Route path="ResultsCT" element={<ResultsCT />} />
         </Route>
       </Routes>
     </BrowserRouter>
