@@ -16,8 +16,8 @@ const Heading = () => {
 
     <div style={{ display: 'flex' }}>
         <div style={{ flex: 1 }}>
-          <h2 style={{ textAlign: 'left', lineHeight: '1.5em' }}> 
-          &nbsp;We would recommend our milk tea. Enjoy a taste of this good &nbsp;old reliable, knowing that it will be exactly what you expected. &nbsp;Please be aware that we add MILK to every cup and that this &nbsp;helps keep your calcium levels up.
+          <h2 style={{ textAlign: 'left', lineHeight: '1.5em', margin: '5rem 0 0 30%' }}> 
+          We would recommend our milk tea. Enjoy a taste of this good old reliable, knowing that it will be exactly what you expected. Please be aware that we add MILK to every cup and that this helps keep your calcium levels up.
           </h2>
         </div>
         <div style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
