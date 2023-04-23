@@ -1,5 +1,5 @@
 const NoPage = () => {
-    return <h1 className="title">Find your perfect bubble tea match in just a few clicks!</h1>;
+    return <h1 className="title">404 error</h1>;
   };
   
   export default NoPage;
