@@ -40,8 +40,40 @@ function warning() {
     alert('Please note this is just a fun quiz, please do not accept the recommendation as this could damage your health and potentially result in death!');
   }
 
+  function alcohol() {
+    alert('Did you expect alcohol in your bubble tea?! Pick another!');
+  }
+
+  function resultNav() {
+    const randomNumber = () => {
+        Math.floor(Math.random() * 6);
+            }
+           let where = ""
+  if ( randomNumber == 5) {
+    return(where = "/Results")
+
+  }
+  if (randomNumber == 4) {
+    return(where = "/ResultsBST")
+    
+  }
+  if (randomNumber == 3) {
+    return(where = "/ResultsCT")
+  }
+  if (randomNumber == 2) {
+    return(where = "/ResultsFT")
+        }
+  if (randomNumber == 1) {
+    return(where = "/ResultsVT")
+
+
+  }
+}
+
+
 const Quiz = (props) => {
     const navigate = useNavigate();
+    const where = resultNav();
 
     return <>
     <h1>Quiz</h1>
@@ -78,6 +110,8 @@ const Quiz = (props) => {
     <img className="quizImageChocs" src={Q3image4} alt="everything"/>
     <img className="quizImageChocs" src={Q3image5} alt="serious dark"/>
     <img className="quizImageChocs" src={Q3image6} alt="tipsy truffles"/>
+    <div><button className="Q3Alcohol" onClick={alcohol}>Tipsy truffles</button></div>
+
 
     <h3 className="questionNumber">Question 4</h3>
     <p className="questionPhrase">Choose your preferred sugar level?</p>
@@ -113,6 +147,9 @@ const Quiz = (props) => {
     <img className="quizImageHoliday" src={Q7image4} alt="camping holiday"/>
     <img className="quizImageHoliday" src={Q7image5} alt="spa break"/>
     <p>
+    <button className="resultsButton" onClick={() => navigate("where")}>Random Answer!</button>
+    </p>
+    <p>
     <button className="resultsButton" onClick={() => navigate("/Results")}>View my result!</button>
     </p>
     </>
@@ -121,3 +158,37 @@ const Quiz = (props) => {
   };
   
   export default Quiz;
+
+  /* trying to create the navigation to the quiz
+  function resultNav() {
+    const getRandomNumber = () => {
+        Math.floor(Math.random() * 6);
+            }
+    const navigate = useNavigate
+
+  if ( randomNumber == 5) {
+      return ( () => navigate("/Results")
+      )
+  }
+  if (randomNumber == 4) {
+      return ( () => navigate("/ResultsBST")
+      )
+  }
+  if (randomNumber == 3) {
+      return ( () => navigate("/ResultsCT")
+      )
+  }
+  if (randomNumber == 2) {
+      return ( () => navigate("/ResultsFT")
+      )
+  }
+  if (randomNumber == 1) {
+      return ( () => navigate("/ResultsVT")
+      )
+  }
+}
+
+    <p>
+    <button className="resultsButton" onClick={resultNav}>Random Answer!</button>
+    </p>
+*/
