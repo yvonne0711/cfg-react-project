@@ -48,14 +48,13 @@ function warning() {
     alert('Did you expect alcohol in your bubble tea?! Pick another!');
   }
 
-  function resultNav() {
-    let x = "/Results"
-
-    /*
+  /*
+  function navigateResults() {
+    let x = ""
+   
 Not been able to get this working, maybe the math.floor random isn't done well, maybe there's a way to get the 
-*/
 
-const randomNumber = () => {
+function randomNumber() {
         Math.floor(Math.random() * 6);
             }
 
@@ -79,10 +78,10 @@ const randomNumber = () => {
   }
 
   let x = "/Results";
-
+*/
 const Quiz = (props) => {
     const navigate = useNavigate();
-    let y = resultNav(x);
+
 
 
     return <>
@@ -156,9 +155,11 @@ const Quiz = (props) => {
     <img className="quizImageHoliday" src={Q7image3} alt="city break"/>
     <img className="quizImageHoliday" src={Q7image4} alt="camping holiday"/>
     <img className="quizImageHoliday" src={Q7image5} alt="spa break"/>
+    {/*
     <p>
-    <button className="resultsButton" onClick={() => navigate(x)}>Random Answer!</button>
+    <button className="resultsButton" onClick={() => navigateResults(x)}>Random Answer!</button>
     </p>
+*/}
     <p>
     <button className="resultsButton" onClick={() => navigate("/Results")}>View my result!</button>
     </p>
