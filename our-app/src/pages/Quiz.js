@@ -36,6 +36,10 @@ import Results from './Results.js';
 import React from 'react';
 import { useNavigate } from "react-router-dom";
 
+function warning() {
+    alert('Please note this is just a fun quiz, please do not accept the recommendation as this could damage your health and potentially result in death!');
+  }
+
 const Quiz = (props) => {
     const navigate = useNavigate();
 
@@ -43,10 +47,13 @@ const Quiz = (props) => {
     <h1>Quiz</h1>
     <h3 className="questionNumber">Question 1</h3>
     <p className="questionPhrase">Do any of the following apply to you?</p>
+    <div><button className="Q1Danger" onClick={warning}>I have a food allergy or an intolerance</button></div>
+    <div><button className="Q1Danger" onClick={warning}>I am diabetic</button></div>
+    <div><button className="Q1Danger" onClick={warning}>I'm watching my weight</button></div>
 
-    {/* working checkbox, not finished */}
-    <div><input type="checkbox"/>here</div>
-{/* attempting to create checkboxes for the allergy / intolerance / diabetes / weight
+
+{/* attempting checkboxes
+
     <form action="/action_page.php">
     <input type="checkbox" id="issue1" name="issue1" value="allergy"><label for="issue1">I have a food allergy or an intolerance</label><br></br>
     <input type="checkbox" id="issue2" name="issue2" value="diabetic"><label for="issue2">I am diabetic</label><br></br>
@@ -54,9 +61,6 @@ const Quiz = (props) => {
     <input type="submit" value="Submit"></input>
     </form>
 */}
-    <p className="answer">I have a food allergy or an intolerance</p>
-    <p className="answer">I am diabetic</p>
-    <p className="answer">I'm watching my weight</p>
 
     <h3 className="questionNumber">Question 2</h3>
     <p className="questionPhrase">Which of these pictures inspires your tastebuds? <span italics>Click all that apply</span></p>
@@ -77,12 +81,13 @@ const Quiz = (props) => {
 
     <h3 className="questionNumber">Question 4</h3>
     <p className="questionPhrase">Choose your preferred sugar level?</p>
-    <img className="quizImageSugar" src={sugarLevel} alt="sugar level"/>
-    <p className="answer">Very low</p>
-    <p className="answer">Low</p>
-    <p className="answer">Moderate</p>
-    <p className="answer">High</p>
-    <p className="answer">Very high</p>
+    <div><img className="quizImageSugar" src={sugarLevel} alt="sugar level"/>
+    <p><input type="checkbox"/>Very low</p>
+    <p><input type="checkbox"/> low</p>
+    <p><input type="checkbox"/>Moderate</p>
+    <p><input type="checkbox"/>High</p>
+    <p><input type="checkbox"/>Very high</p></div>
+
 
     <h3 className="questionNumber">Question 5</h3>
     <p className="questionPhrase">Which colours do you like? <italics>Tick all that apply:</italics></p>

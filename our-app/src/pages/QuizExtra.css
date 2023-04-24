@@ -17,6 +17,11 @@ body {
   padding-bottom: 1rem;
 }
 
+.Q1Danger {
+  width:500px;
+  padding:20px;
+}
+
 .quizImageTea {
   width:300px;
   height:350px;
