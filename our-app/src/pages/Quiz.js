@@ -32,6 +32,10 @@ import Q7image3 from './Q7image3.png'
 import Q7image4 from './Q7image4.png' 
 import Q7image5 from './Q7image5.png' 
 
+import ResultsBST from './ResultsBST.js';
+import ResultsCT from './ResultsCT.js';
+import ResultsFT from './ResultsFT.js';
+import ResultsVT from './ResultsVT.js';
 import Results from './Results.js';
 import React from 'react';
 import { useNavigate } from "react-router-dom";
@@ -45,35 +49,41 @@ function warning() {
   }
 
   function resultNav() {
-    const randomNumber = () => {
+    let x = "/Results"
+
+    /*
+Not been able to get this working, maybe the math.floor random isn't done well, maybe there's a way to get the 
+*/
+
+const randomNumber = () => {
         Math.floor(Math.random() * 6);
             }
-           let where = ""
-  if ( randomNumber == 5) {
-    return(where = "/Results")
 
+  if ( randomNumber == 5) {
+    x = "/Results"
+   
   }
   if (randomNumber == 4) {
-    return(where = "/ResultsBST")
+    x = "/ResultsBST"
     
   }
   if (randomNumber == 3) {
-    return(where = "/ResultsCT")
-  }
-  if (randomNumber == 2) {
-    return(where = "/ResultsFT")
+    x = "/ResultsCT"
+
+  }  if (randomNumber == 2) {
+    x = "/ResultsFT"
         }
   if (randomNumber == 1) {
-    return(where = "/ResultsVT")
-
-
-  }
+    x = "/ResultsVT"
 }
+  }
 
+  let x = "/Results";
 
 const Quiz = (props) => {
     const navigate = useNavigate();
-    const where = resultNav();
+    let y = resultNav(x);
+
 
     return <>
     <h1>Quiz</h1>
@@ -147,7 +157,7 @@ const Quiz = (props) => {
     <img className="quizImageHoliday" src={Q7image4} alt="camping holiday"/>
     <img className="quizImageHoliday" src={Q7image5} alt="spa break"/>
     <p>
-    <button className="resultsButton" onClick={() => navigate("where")}>Random Answer!</button>
+    <button className="resultsButton" onClick={() => navigate(x)}>Random Answer!</button>
     </p>
     <p>
     <button className="resultsButton" onClick={() => navigate("/Results")}>View my result!</button>
