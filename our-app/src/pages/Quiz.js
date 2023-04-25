@@ -94,14 +94,14 @@ function warning() {
 
 
     return <>
-    <h1>Quiz</h1>
+    <h1 style={{ fontSize: '3em', marginBottom: '0.5em' }}>Quiz</h1>
     <h3 className="questionNumber">Question 1</h3>
     <p className="questionPhrase">Do any of the following apply to you?</p>
     <div><button className="Q1Danger" onClick={warning}>I have a food allergy or an intolerance</button></div>
     <div><button className="Q1Danger" onClick={warning}>I am diabetic</button></div>
     <div><button className="Q1Danger" onClick={warning}>I'm watching my weight</button></div>
 
-
+/
 {/* attempting checkboxes
 
     <form action="/action_page.php">
