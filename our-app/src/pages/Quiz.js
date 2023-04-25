@@ -166,11 +166,23 @@ function warning() {
     <img className="quizImageHoliday" src={Q7image5} alt="spa break"/>
     
     <p>
-    <button className="resultsButton" onClick={() => navigateResults()}>Random Answer!</button>
+    <button className="cta-button"  onClick={() => navigateResults()}>Random Answer!</button>
     </p>
     
     <p>
-    <button className="resultsButton" onClick={() => navigate("/Results")}>View my result!</button>
+    <button className="cta-button"  onClick={() => navigate("/Results")}>View my result! Milk Tea</button>
+    </p>
+    <p>
+    <button className="cta-button"  onClick={() => navigate("/ResultsBST")}>View my result! Brown Sugar Tea</button>
+    </p>
+    <p>
+    <button className="cta-button"  onClick={() => navigate("/ResultsCT")}>View my result! Camomile Tea</button>
+    </p>
+    <p>
+    <button className="cta-button"  onClick={() => navigate("/ResultsFT")}>View my result! Fruit Tea</button>
+    </p>
+    <p>
+    <button className="cta-button"  onClick={() => navigate("/ResultsVT")}>View my result! Milk Tea</button>
     </p>
     </>
 
