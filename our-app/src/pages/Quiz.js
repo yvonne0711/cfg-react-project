@@ -32,11 +32,12 @@ import Q7image3 from './Q7image3.png'
 import Q7image4 from './Q7image4.png' 
 import Q7image5 from './Q7image5.png' 
 
-import ResultsBST from './ResultsBST.js';
-import ResultsCT from './ResultsCT.js';
-import ResultsFT from './ResultsFT.js';
-import ResultsVT from './ResultsVT.js';
-import Results from './Results.js';
+import ResultsBST from './Results.js'
+import ResultsCT from './ResultsBST.js'
+import ResultsFT from './ResultsCT.js'
+import ResultsVT from './ResultsFT.js'
+import Results from './ResultsVT.js'
+
 import React from 'react';
 import { useNavigate } from "react-router-dom";
 
@@ -48,38 +49,46 @@ function warning() {
     alert('Did you expect alcohol in your bubble tea?! Pick another!');
   }
 
-  /*
+  function randomNumber() {
+    Math.floor(Math.random() * 5);
+        }
+
   function navigateResults() {
-    let x = ""
-   
-Not been able to get this working, maybe the math.floor random isn't done well, maybe there's a way to get the 
+    Results = ("/Results")
+    ResultsBST = ("/ResultsBST")
+    ResultsCT = ("/ResultsCT")
+    ResultsFT = ("/ResultsFT")
+    ResultsVT = ("/ResultsVT")
 
-function randomNumber() {
-        Math.floor(Math.random() * 6);
-            }
-
-  if ( randomNumber == 5) {
-    x = "/Results"
+    let x = randomNumber()
+    
+    if ( x === 0) {
+    return(
+    x = Results)
    
   }
-  if (randomNumber == 4) {
-    x = "/ResultsBST"
+  if (x === 4) {
+    return(
+      x = ResultsBST)
     
   }
-  if (randomNumber == 3) {
-    x = "/ResultsCT"
+  if (x === 3) {
+    return(
+      x = ResultsCT)
 
-  }  if (randomNumber == 2) {
-    x = "/ResultsFT"
+  }  if (x === 2) {
+    return(
+      x = ResultsFT
+    )
         }
-  if (randomNumber == 1) {
-    x = "/ResultsVT"
+  if (x === 1) {
+    return(
+    x = ResultsVT)
 }
   }
 
-  let x = "/Results";
-*/
-const Quiz = (props) => {
+
+  const Quiz = (props) => {
     const navigate = useNavigate();
 
 
@@ -155,11 +164,11 @@ const Quiz = (props) => {
     <img className="quizImageHoliday" src={Q7image3} alt="city break"/>
     <img className="quizImageHoliday" src={Q7image4} alt="camping holiday"/>
     <img className="quizImageHoliday" src={Q7image5} alt="spa break"/>
-    {/*
+    
     <p>
-    <button className="resultsButton" onClick={() => navigateResults(x)}>Random Answer!</button>
+    <button className="resultsButton" onClick={() => navigateResults()}>Random Answer!</button>
     </p>
-*/}
+    
     <p>
     <button className="resultsButton" onClick={() => navigate("/Results")}>View my result!</button>
     </p>
